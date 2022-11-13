@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html>
     <style>
     body {
-  background-color: grey;
+  background-color: black;
         }
     </style>
 <head>
@@ -84,7 +84,7 @@
             let counter = 0;
             const next = function () {
                 fx.setText(phrases[counter]).then(() => {
-                    setTimeout(next, 1450)
+                    setTimeout(next, 2000)
                 });
                 counter = (counter + 1) % phrases.length;
             };
@@ -96,7 +96,7 @@
 <body onload="bootstrap();">
 <div class="container">
     <center>
-    <h1><div class="text"></div></h1>
+    <h1></h1>><b><font size="+8"><div class="text" style="color: white"></div></font></b></h1>
     </center>
 </div>
 </body>
