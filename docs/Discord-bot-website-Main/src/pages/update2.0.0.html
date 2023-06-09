@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+
+    
+    <script defer data-domain="bstar.app" src="https://plausible.io/js/script.js"></script>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://bstar.app/style.css" />
+
+    <meta property="og:title" content="Patch-notes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+
+    <title>Clean Audio Bot&#39;s Star - Patch-notes</title>
+</head><body>
+        <div class="container content text-light"><div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <span class="fs-4">Clean Audio Bot</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://discord.gg/h5C5wEx" class="nav-link">Discord</a></li>
+        </ul>
+    </header>
+</div>
+<h1 class="page-title" style="color: darkorange; font-family: 'Arial Black', sans-serif; font-size: 36px; font-weight: bold;">Bot Update 2.0.0</h1>
+
+<ul class="posts"><li class="post">
+			<div><a class="post-list-title" href="/patch-notes/18c/">18c Patch Notes - Balance Changes &amp; Bugfixes</a></div>
+			<div><span class="meta">June 7-10, 2023</span></div>
+		</li><li class="post">
+			<div><a class="post-list-title" href="/patch-notes/18b/">18b Patch Notes - Bugfixes</a></div>
+			<div><span class="meta">June 9, 2023</span></div>
+		</li><li class="post">
+			<div><a class="post-list-title" href="/patch-notes/18a/">18a Patch Notes - 3-4 Player Games, and Beginning of Season 3</a></div>
+			<div><span class="meta">June 9, 2023</span></div>
+		</li><li class="post">
+			<div><a class="post-list-title" href="/patch-notes/17d/">17d Patch Notes - Friends system</a></div>
+			<div><span class="meta">June 9, 2023</span></div>
+		</li><li class="post">
+			<div><a class="post-list-title" href="/patch-notes/17b/">17b Patch Notes</a></div>
+			<div><span class="meta">June 9, 2023</span></div>
+		</li></ul>
+<div class="container">
+    <footer class="py-3 my-4">
+        <p class="text-center" style="color: rgb(193, 193, 193);">© 2023 Clean Audio</p>
+    </footer>
+</div>
+
+<script>
+    function updateText() {
+        let delay = 200;
+        let wavyAll = document.querySelectorAll(".wavy");
+
+        for (const wavy of wavyAll) {
+            wavy.innerHTML = wavy.textContent
+                .split("")
+                .map(letter => {
+                    console.log(letter);
+                    return `<span>` + letter + `</span>`;
+                })
+                .join("");
+
+            Array.from(wavy.children).forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add("wavy-animated");
+                }, index * 60 + delay);
+            });
+        }
+    }
+
+    updateText();
+</script></div>
+    </body>
+</html>
